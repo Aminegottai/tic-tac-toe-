@@ -70,7 +70,6 @@ for row in range(3):
         button = tk.Button(window, text='', bd=0, highlightthickness=0, bg='#1B019B', width=5, height=2)
         button.grid(row=row * 2, column=col * 2, padx=5, pady=5, sticky='nsew')
         
-        # Stocker le bouton avec son numéro
         buttons[button_number] = button
         
         button.config(command=lambda btn=button, num=button_number: button_click(btn, num))
